@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio | Responsive website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="toggle" onclick="toggleMenu();"></div>
+<!--///// home page /////-->   
+   <section class="banner" id="home">
+       <div class="imgSidebar">
+            <img src="pictures/rita1.jpg">
+       </div>
+       <div class="contentBx">
+        <h5 class="logoText">My_Portfolio</h5>
+        <div>
+            <h4><span>Hello</span> I'am</h4>
+            <h2>Margarita Kosheleva</h2><br>
+            <h4>I'am a self taught 3D Artist.</h4>
+            <p>Here goes information about myself...</p>
+            <a href="#" class="btn">About Me</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="pictures/facebook.png"></a></li>
+            <li><a href="#"><img src="pictures/twitter.png"></a></li>
+            <li><a href="#"><img src="pictures/instagram.png"></a></li>
+        </ul>
+       </div>
+   </section>
+<!--///// about me /////-->
+   <section class="about" id="about">
+       <div class="title white">
+           <h2>About me</h2>
+           <p>Some random text or not random...</p>
+       </div>
+       <div class="content">
+           <div class="textBx">
+               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+           </div>
+           <div class="imgbx">
+               <img src="pictures/stepsritacrop.jpg">
+           </div>
+       </div>
+   </section>
+<!--/////// work section /////-->
+   <section class="work" id="work">
+       <div class="title">
+           <h2>My Works</h2>
+           <p>Text about my work</p>
+       </div>
+       <div class="content">
+           <div class="workBx">
+               <div class="imgBx">
+                    <img src="pictures/girl1.jpg">
+               </div>
+               <div class="textBx">
+                   <h3>Project 01</h3>
+               </div>
+           </div>
+           <div class="workBx">
+            <div class="imgBx">
+                 <img src="pictures/statue.jpg">
+            </div>
+            <div class="textBx">
+                <h3>Project 02</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgBx">
+                 <img src="pictures/japan.jpg">
+            </div>
+            <div class="textBx">
+                <h3>Project 03</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgBx">
+                 <img src="pictures/sea.jpg">
+            </div>
+            <div class="textBx">
+                <h3>Project 04</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgBx">
+                 <img src="pictures/room1.jpg">
+            </div>
+            <div class="textBx">
+                <h3>Project 05</h3>
+            </div>
+        </div>
+        <div class="workBx">
+            <div class="imgBx">
+                 <img src="pictures/room2.jpg">
+            </div>
+            <div class="textBx">
+                <h3>Project 06</h3>
+            </div>
+        </div>
+       </div>
+   </section>
+<!--/////// contact me /////--->
+   <section class="contact" id="contact">
+       <div class="title white">
+           <h2>Contacts</h2><br><br><br>
+           <p>Contact text</p><br><br>
+       </div>
+       <div class="contactForm">
+           <div class="row">
+               <div class="col150">
+                   <input type="text" name="" placeholder="First Name">
+               </div>
+               <div class="col150">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+           </div>
+           <div class="row">
+               <div class="col150">
+                   <input type="text" name="" placeholder="Email">
+               </div>
+               <div class="col150">
+                    <input type="text" name="" placeholder="Mobile number">
+                </div>
+           </div>
+
+           <div class="row">
+               <div class="col100">
+                    <textarea placeholder="Message"></textarea>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col100">
+                    <input type="submit" value="Send">
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <div class="copyright">
+       <p>Copyright © 2021. All right Reserved.</p>
+   </div>
+
+<!--/////// side bar /////-->
+   <div class="sidebar">
+       <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#work" onclick="toggleMenu();">My Works</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contacts</a></li>
+       </ul>
+   </div>
+
+   <script>
+       function toggleMenu(){
+           const menuToggle = document.querySelector('.toggle');
+           const sidebar = document.querySelector('.sidebar');
+           menuToggle.classList.toggle('active');
+           sidebar.classList.toggle('active');
+       }
+   </script>
+</body>
+</html>
